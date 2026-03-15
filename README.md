@@ -1,1 +1,77 @@
-# 42beirut-py00-growing-code
+*This project has been created as part of the 42 curriculum by nmina.*
+
+# Python Module 00: Growing Code - Python Fundamentals Through Garden Data
+
+## Description
+
+This project introduces Python's core programming concepts through community garden scenarios.
+Each exercise builds on the previous one, covering expressions, variables, functions, control flow, loops, recursion and type annotations.
+
+The goal is to build a solid foundation in Python syntax and semantics, writing clean, readable functions that solve practical problems.
+
+## Instructions
+
+### Requirements
+
+- Python 3.10+
+- flake8 (for linting)
+
+### Install flake8
+
+```bash
+pip3 install flake8
+```
+
+### Run an exercise
+
+Each exercise is a standalone Python file containing a single function. To test them, use the provided `main.py` helper:
+
+```bash
+python3 main.py
+```
+
+### Check code style
+
+```bash
+flake8 ex0/ft_hello_garden.py
+flake8 ex1/ft_plot_area.py
+# etc.
+```
+
+No output means your code is clean. flake8 checks but does **not** fix errors - you fix them yourself (just like norminette for C).
+
+## Exercises Overview
+
+| Exercise | File | Concept |
+|---|---|---|
+| 0 | `ex0/ft_hello_garden.py` | print(), basic output |
+| 1 | `ex1/ft_plot_area.py` | input(), int(), arithmetic |
+| 2 | `ex2/ft_harvest_total.py` | Variables, addition |
+| 3 | `ex3/ft_plant_age.py` | if/else conditionals |
+| 4 | `ex4/ft_water_reminder.py` | Conditional logic |
+| 5 | `ex5/ft_count_harvest_iterative.py` & `ft_count_harvest_recursive.py` | Loops and recursion |
+| 6 | `ex6/ft_garden_summary.py` | Combining data, string output |
+| 7 | `ex7/ft_seed_inventory.py` | Type annotations, string methods |
+
+## Algorithm & Data Structure Choices
+
+Each exercise uses the simplest appropriate structure:
+
+- **Exercises 0–4**: Simple variables and conditionals.
+- **Exercise 5 (iterative)**: A `for` loop with `range(1, n+1)` iterates from day 1 to n.
+- **Exercise 5 (recursive)**: A nested helper function is used to avoid exposing internal state through the public function signature. The helper tracks the current day and compares it to the total captured via closure.
+- **Exercise 7**: A simple `if/elif/else` chain maps unit strings to output formats.
+
+## Resources
+
+- [Python 3 Official Documentation](https://docs.python.org/3/)
+- [flake8 medium article](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2)
+
+### AI Usage
+
+AI (Claude) was used during this project for the following:
+- **Debugging logic**: Describing unexpected output and asking what might be wrong
+- **Linting help**: Understanding what flake8 error codes mean
+- **README writing**: Generating a structured README template based on my project notes taken during development
+
+All code was written and understood by the student. AI was not used to generate final solutions directly.
