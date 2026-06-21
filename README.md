@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by nmina.*
+_This project has been created as part of the 42 curriculum by nmina._
 
 # Python Module 00: Growing Code - Python Fundamentals Through Garden Data
 
@@ -18,6 +18,7 @@ The goal is to build a solid foundation in Python syntax and semantics, writing 
 - mypy (for type checking)
 
 ### Install dependencies
+
 ```bash
 pip3 install flake8
 pip3 install mypy
@@ -26,11 +27,13 @@ pip3 install mypy
 ### Run an exercise
 
 Each exercise is a standalone Python file containing a single function. To test them, use the provided `main.py` helper:
+
 ```bash
 python3 main.py
 ```
 
 ### Check code style
+
 ```bash
 flake8 ex0/ft_hello_garden.py
 # etc.
@@ -39,23 +42,25 @@ flake8 ex0/ft_hello_garden.py
 No output means your code is clean. flake8 checks but does **not** fix errors - you fix them yourself (just like norminette for C).
 
 ### Check type hints
+
 ```bash
 mypy ex7/ft_seed_inventory.py
 ```
+
 Type hints tell Python what type each parameter and return value should be (e.g. str, int, None). mypy checks that they are written correctly.
 
 ## Exercises Overview
 
-| Exercise | File | Concept |
-|---|---|---|
-| 0 | `ex0/ft_hello_garden.py` | print(), basic output |
-| 1 | `ex1/ft_garden_name.py` | input(), print(), string output |
-| 2 | `ex2/ft_plot_area.py` | input(), int(), arithmetic |
-| 3 | `ex3/ft_harvest_total.py` | Variables, addition |
-| 4 | `ex4/ft_plant_age.py` | if/else conditionals |
-| 5 | `ex5/ft_water_reminder.py` | Conditional logic |
-| 6 | `ex6/ft_count_harvest_iterative.py` & `ft_count_harvest_recursive.py` | Loops and recursion |
-| 7 | `ex7/ft_seed_inventory.py` | Type annotations, string methods |
+| Exercise | File                                                                  | Concept                          |
+| -------- | --------------------------------------------------------------------- | -------------------------------- |
+| 0        | `ex0/ft_hello_garden.py`                                              | print(), basic output            |
+| 1        | `ex1/ft_garden_name.py`                                               | input(), print(), string output  |
+| 2        | `ex2/ft_plot_area.py`                                                 | input(), int(), arithmetic       |
+| 3        | `ex3/ft_harvest_total.py`                                             | Variables, addition              |
+| 4        | `ex4/ft_plant_age.py`                                                 | if/else conditionals             |
+| 5        | `ex5/ft_water_reminder.py`                                            | Conditional logic                |
+| 6        | `ex6/ft_count_harvest_iterative.py` & `ft_count_harvest_recursive.py` | Loops and recursion              |
+| 7        | `ex7/ft_seed_inventory.py`                                            | Type annotations, string methods |
 
 ## Algorithm & Data Structure Choices
 
@@ -63,7 +68,6 @@ Each exercise uses the simplest appropriate structure:
 
 - **Exercises 0–5**: Simple variables and conditionals.
 - **Exercise 6 (iterative)**: A `for` loop with `range(1, n+1)` iterates from day 1 to n.
-- **Exercise 6 (recursive)**: A nested helper function is used to avoid exposing internal state through the public function signature. The helper tracks the current day and compares it to the total captured via closure.
 - **Exercise 7**: A simple `if/elif/else` chain maps unit strings to output formats.
 
 ## Resources
@@ -74,6 +78,7 @@ Each exercise uses the simplest appropriate structure:
 ### AI Usage
 
 AI (Claude) was used during this project for the following:
+
 - **Debugging logic**: Describing unexpected output and asking what might be wrong
 - **Linting help**: Understanding what flake8 error codes mean
 - **README writing**: Generating a structured README template based on my project notes taken during development
